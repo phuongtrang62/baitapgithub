@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAYOUT3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        
+        .wrapper {
+            height: 500px;
+            width: 989px;
+            background-color: rgb(250, 197, 133);
+            border: 1px solid black;
+            margin: 0px auto;
+            padding: 0px;
+            border: 1px solid;
+        }
+        
+        .header {
+            height: 40px;
+            width: 989px;
+            border-bottom: 1px solid black;
+            text-align: center;
+        }
+        
+        .menu {
+            height: 40px;
+            width: 989px;
+            border-bottom: 1px solid black;
+            text-align: center;
+        }
+        
+        .content {
+            height: 380px;
+            width: 989px;
+            border-bottom: 1px solid black;
+        }
+        
+        .nav {
+            height: 380px;
+            width: 30%;
+            border-right: 1px solid black;
+            float: left;
+        }
+        
+        .section {
+            height: 380px;
+            width: 70%;
+            float: right;
+            position: static;
+        }
+        
+        .footer {
+            height: 60px;
+            width: 989px;
+            background-color: rgb(250, 197, 133);
+            border: 1px solid black;
+            clear: both;
+            text-align: center;
+        }
+        
+        .article {
+            height: 300px;
+            width: 650px;
+            background-color: rgb(133, 250, 240);
+            border: 1px solid black;
+            float: right;
+            position: relative;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="content">
+            <div class="nav">Nav</div>
+            <div class="aside"></div>
+            <div class="section">Section
+                <div class="article">
+                    artcle
+                </div>
+            </div>
+        </div>
+        <div>
+
+            <div class="footer">Footer</div>
+        </div>
+    </div>
+</body>
+
+</html>
