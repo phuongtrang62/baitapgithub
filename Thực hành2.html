@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .wrapper{
+        height: 500px;
+        width: 900px;
+        padding: 0px auto;
+        margin: 0px auto;
+        background-color: rgba(242, 242, 241, 0.987);
+        border: 1px solid black;
+    }
+    .header{
+        height: 100px;
+        border-bottom: 1px solid black;
+    }
+    .header .p1{
+        position: absolute;
+        top: -15px;
+        right: 150px;
+        font-size: 30px;
+        color: rgb(15, 32, 107);
+        text-shadow: chocolate ;
+    }
+    .header:hover>.p1{
+        font-style:normal
+        font-weight: bolder;
+    }
+    .header .p2{
+        position: absolute;
+        top: 25px;
+        right: 300px;
+        font-size: 25px;
+        color: rgb(10, 56, 26);
+        text-shadow: chocolate ;
+    }
+    .nav{
+        height: 50px ;
+        border-bottom: 1px solid black;
+    }
+    .menu li{
+        position: relative;
+        width: 200px;
+        height: 50px;
+        background-color: rgb(124, 196, 118);
+        float: left;
+        list-style-type: none;
+        line-height: 50px;
+        text-indent: 20px;
+        border: 1px solid black;
+        border-spacing:5px ;
+
+    }
+    li a{
+        text-decoration: none;
+        font-weight: bolder;
+    }
+    .menu li:hover{
+        background-color: bisque;
+    }
+    li:hover>a{
+        font-style: italic;
+    }
+   
+    .menu li:hover .SUB-menu{
+        position: absolute;
+        display: block;
+    }
+    .menu li .SUB-menu{
+        display: none;
+    }
+    .menu li .SUB-menu li:hover .SUB-menu{
+        position: absolute;
+        display: block;
+    }
+    .menu li .SUB-menu li .SUB-menu{
+        display: none;
+        top: 0px;
+        left: 170px;
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <img src="https://rubee.com.vn/wp-content/uploads/2021/05/logo-iuh-1-768x335.png" alt="" srcset="" height="100" width="300">
+            <p class="p1">Trường Đại Học Công Nghiệp TP.Hồ Chí Minh</p>
+            <p class="p2">Viện Tài Chính-Kế Toán</p>
+        </div>
+        <div class="nav">
+            <ul class="menu">
+                <li> <a href="#"> GIỚI THIỆU </a>
+                    <ul class="SUB-menu">
+                        <li> <a href="#">Chiến lược </a></li>
+                        <li> <a href="#">Đào tạo </a>
+                            <ul class="SUB-menu">
+                                <li> <a href="#">Thông tin tuyển sinh</a></li>
+                                <li> <a href="#">Chương trình đào tạo</a></li>
+                                <li> <a href="#">Hoạt động</a></li>
+                                <li><a href="#">Học tập </a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="#">Tổ chức </a></li>
+                        <li><a href="#">Sinh viên </a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">HỌC PHÍ</a></li>
+                <li> <a href="#">LỊCH HỌC</a></li>
+                <li><a href="#">IUH-SFA LMS </a>
+                    <ul class="SUB-menu">
+                        <li> <a href="#">Đổi mật khẩu </a>
+                            <ul class="SUB-menu">
+                                <li> <a href="#">Tên tài khoản </a>
+                                <li> <a href="#"> Mật khẩu </a>
+
+                                </ul>
+
+                        </li>
+                       
+                        
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+        <div class="conten">
+            <div class="aisde"></div>
+            <div class="section"></div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
